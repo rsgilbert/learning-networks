@@ -1,0 +1,8 @@
+// inspect network
+docker  network inspect dns_api_network
+
+
+
+
+
+

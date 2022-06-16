@@ -1,0 +1,36 @@
+services:
+  api1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api1
+    networks:
+      - api_network
+    volumes:
+      - ./src:/myapp/src 
+
+  api2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api2
+    networks:
+      - api_network
+    volumes:
+      - ./src:/myapp/src 
+
+  api3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api3
+    networks:
+      - api_network
+    volumes:
+      - ./src:/myapp/src 
+
+
+
+networks:
+  api_network:
+    driver: bridge 

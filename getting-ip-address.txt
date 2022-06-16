@@ -1,0 +1,26 @@
+How to find out IP address
+
+// windows
+ipconfig 
+
+----
+
+// linux
+ifconfig 
+
+// To find out default gateway
+ip route 
+
+------
+// router
+
+// assign an ip 
+enable
+config t 
+int Fast 0/0
+ip address 192.158.13.54 255.255.255.0
+
+// find out ip 
+show interfaces
+show ip interface 
+show ip interface brief 
